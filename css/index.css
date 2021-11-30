@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  outline: none !important;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+.heading {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 2.8rem;
+  margin-top: 2rem;
+}
+
+.heading span {
+  position: relative;
+  z-index: 0;
+}
+
+.heading span::before {
+  content: '';
+  position: absolute;
+  bottom: 0.55rem;
+  left: 0;
+  z-index: -1;
+  background: #aea598;
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(0 90%, 100% 83%, 100% 100%, 0% 100%);
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+nav {
+  background: #3791c8;
+}
+
+nav i {
+  font-size: 1.6rem;
+}
+
+.home {
+  background: url(/imgs/pexels-daniel-spase-2091351.jpg);
+  background-size: cover;
+  color: #fff;
+}
+
+.home .color-overlay {
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.home .hey-there {
+  font-size: 1.3rem;
+}
+.home .btn {
+  background: conic-gradient(
+    from -90deg at bottom center,
+    papayawhip,
+    peachpuff
+  );
+}
+.home .btn:hover {
+  opacity: 0.9;
+}
+
+.about .btn {
+  background: #1b445e;
+}
+
+.about .btn:hover {
+  opacity: 0.9;
+}
+
+.about i {
+  font-size: 1.5rem;
+}
+
+.about .contact-social {
+  padding-left: 1.77rem;
+}
+
+.projects {
+  background: #d9e1e8;
+}
+
+.projects img {
+  min-height: 211.3px;
+}
+.projects .project-img {
+  border-bottom: 1px solid rgba(41, 41, 41, 0.1);
+}
+
+.about .nav span {
+  font-size: 13px;
+  border: 1px solid rgba(41, 41, 41, 0.1);
+  padding: 5px 15px;
+  border-radius: 40px;
+  margin: 0 5px 5px 0;
+  background: #3791c8;
+  color: #fff;
+}
+
+.projects .project-card {
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 0.375rem 1.5rem 0 rgba(140, 152, 164, 0.125);
+  border-radius: 10px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.projects .nav span {
+  font-size: 13px;
+  border: 1.6px solid rgba(41, 41, 41, 0.1);
+  padding: 5px 15px;
+  border-radius: 40px;
+  margin: 0 5px 5px 0;
+  color: #333;
+}
+
+.projects .project-card .project-info {
+  padding: 25px;
+  position: relative;
+  background: #fff;
+  min-height: 298.56px;
+}
+
+.projects a {
+  text-decoration: none;
+}
+
+.projects .project-card .project-info .btn-bar button {
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-outline-primary {
+  background-color: #1b445e !important;
+  border-color: #1b445e !important;
+  color: #fff !important;
+}
+.btn-outline-primary:hover {
+  opacity: 0.9;
+}
+
+.contact .contact-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 0.375rem 1.5rem 0 rgba(140, 152, 164, 0.125);
+  position: relative;
+}
+
+.contact .contact-info {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 0.375rem 1.5rem 0 rgba(140, 152, 164, 0.125);
+}
+
+.contact .contact-info .contact-name {
+  padding-left: 15px;
+  padding-bottom: 15px;
+  font-size: 14px;
+}
+
+.contact .contact-info .contact-name .sm-title {
+  margin-bottom: 10px;
+}
+.contact .contact-info .contact-name .multiple {
+  margin-bottom: 0.3rem !important;
+}
+
+.contact .contact-form h3 {
+  font-size: 22px;
+}
+.contact .contact-info .contact-name h3 {
+  font-size: 16px;
+}
+.contact .contact-info .contact-name h3::after {
+  content: '';
+  position: absolute;
+  left: 17px;
+  width: 2px;
+  height: 20px;
+  background: #1b445e;
+}
+
+.contact .contact-form h3::after {
+  content: '';
+  position: absolute;
+  top: 32px;
+  left: 17px;
+  width: 2px;
+  height: 20px;
+  background: #1b445e;
+}
+
+.contact .px-btn.px-btn-theme {
+  background: #1b445e;
+  color: #fff;
+}
+
+.contact .contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact .contact-info .contact-name {
+  padding-left: 15px;
+  padding-bottom: 15px;
+  font-size: 14px;
+}
+
+.contact .px-btn {
+  padding: 0 35px;
+  line-height: 48px;
+  position: relative;
+  display: inline-block;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none !important;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: 0 0.375rem 1.5rem 0 rgba(140, 152, 164, 0.125);
+  border-radius: 5px;
+}
+.contact .px-btn:hover {
+  opacity: 0.9;
+}
+
+.contact .social-nav {
+  padding-left: 15px;
+}
+
+.contact .contact-info .social-nav a {
+  color: #292929;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.footer {
+  padding: 12px 0;
+  border-top: 1px solid rgba(41, 41, 41, 0.1);
+}
+
+.footer i {
+  display: inline-block;
+  font-style: normal;
+  font-size: 1.2rem;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 0.8;
+  margin-left: 0.5rem;
+  vertical-align: -0.125em;
+  -webkit-font-smoothing: antialiased;
+  color: #615b53;
+}
