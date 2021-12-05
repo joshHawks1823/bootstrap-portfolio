@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
+/* Global */
 * {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -53,6 +54,7 @@ li {
   box-shadow: none;
 }
 
+/* Nav */
 nav {
   background: #3791c8;
 }
@@ -61,30 +63,68 @@ nav i {
   font-size: 1.6rem;
 }
 
+/* Home */
+
 .home {
   background: url(/imgs/pexels-daniel-spase-2091351.jpg);
   background-size: cover;
   color: #fff;
+  min-height: 100vh;
 }
 
 .home .color-overlay {
-  min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
 .home .hey-there {
   font-size: 1.3rem;
 }
+
 .home .btn {
-  background: conic-gradient(
-    from -90deg at bottom center,
-    papayawhip,
-    peachpuff
-  );
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  min-height: 45px;
+  margin: 0 0 2em;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.home svg {
+  height: 45px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.home rect {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-dasharray: 422, 0;
+  transition: all 0.35s linear;
+}
+
 .home .btn:hover {
-  opacity: 0.9;
+  background: rgba(#1b445e, 0);
+  font-weight: 900;
+  letter-spacing: 1px;
 }
+.home .btn:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+/* About */
 
 .about .btn {
   background: #1b445e;
@@ -101,7 +141,7 @@ nav i {
 .about .contact-social {
   padding-left: 1.77rem;
 }
-
+/* Projects */
 .projects {
   background: #d9e1e8;
 }
@@ -166,6 +206,7 @@ nav i {
   opacity: 0.9;
 }
 
+/* Contact */
 .contact .contact-form {
   background: #fff;
   padding: 30px;
@@ -266,6 +307,8 @@ nav i {
   font-size: 20px;
   margin-right: 10px;
 }
+
+/* Footer */
 
 .footer {
   padding: 12px 0;
